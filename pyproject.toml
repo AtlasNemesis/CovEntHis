@@ -1,0 +1,22 @@
+[project]
+name = "pcap-covert-analyzer"
+version = "1.0.0"
+description = "Analyzes PCAP files for covert channels using histograms and entropy calculations."
+authors = [
+    { name = "Ashley Smith", email = "ashley@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "GNU General Public License v3.0 or later" }
+
+dependencies = [
+    "scapy",
+    "matplotlib"
+]
+
+[project.scripts]
+pcap-analyze = "pcap_analyzer:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
